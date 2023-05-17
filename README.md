@@ -24,7 +24,7 @@
 - [🙏 walkthrough](#walkthrough)
 - [:memo: License](#license)
 
-# :book: [To_Do_List] <a name="about-project"></a>
+# :book: [Leaderboard] <a name="about-project"></a>
 *[leaderboard]* app is a software application designed to track and display rankings and scores in a competitive environment. It allows users to participate in various activities, such as games, challenges, or contests, and keeps a real-time record of their performance. The app typically presents a list or table showing the top performers, highlighting their scores, achievements, or progress.
 
 ## :hammer_and_wrench: Built With <a name="built-with"></a>
