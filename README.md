@@ -81,11 +81,19 @@ In order to run this project you need:
 - Node JS.
 
 ### Setup
-Clone this repository to your desired folder:
-Use git clone command or download ZIP folder
-sh
-  cd folder Name 
-git@github.com:isume295/My_Portfolio.git
+ 
+- Clone this repository to your desired folder:
+- Use git clone command or download ZIP folder:
+- `git clone https://github.com/isume295/Leaderboard`
+- `cd Leaderboard`
+
+### Install
+- Run `npm i`
+
+### Usage
+To run the project, execute the following command:
+- Run `npm start`
+ 
 
 ### Install
 Install this project with:
@@ -97,6 +105,7 @@ sh
 ### Usage
 To run the project, execute the following command:
 npm start or live server
+ 
 
 sh
   GitHub Pages Server
