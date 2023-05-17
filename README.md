@@ -81,6 +81,7 @@ In order to run this project you need:
 - Node JS.
 
 ### Setup
+ 
 - Clone this repository to your desired folder:
 - Use git clone command or download ZIP folder:
 - `git clone https://github.com/isume295/Leaderboard`
@@ -92,6 +93,19 @@ In order to run this project you need:
 ### Usage
 To run the project, execute the following command:
 - Run `npm start`
+ 
+
+### Install
+Install this project with:
+npm
+sh
+  cd project Name
+  npm init -y
+
+### Usage
+To run the project, execute the following command:
+npm start or live server
+ 
 
 sh
   GitHub Pages Server
