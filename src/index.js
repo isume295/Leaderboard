@@ -5,6 +5,8 @@ import Leaderboard from '../modules/leaderboard.js';
 
 const leaderboard = new Leaderboard();
 const submitBtn = document.querySelector('.add');
+const notify = document.querySelector('.notify-user');
+const message = document.querySelector('.message');
 
 const nameInput = document.querySelector('.user');
 const scoreInput = document.querySelector('.score');
@@ -17,9 +19,27 @@ submitBtn.addEventListener('click', async (e) => {
     score,
   };
   if (user && score) {
-    await leaderboard.addNewScores(body);
+    const result = await leaderboard.addNewScores(body);
     nameInput.value = '';
     scoreInput.value = '';
+    const textNode = document.createTextNode(result.result);
+    message.appendChild(textNode);
+    notify.classList.add('success');
+
+    setTimeout(() => {
+      message.innerHTML = '';
+      notify.classList.remove('success');
+    }, 2000);
+  } else {
+    const result = await leaderboard.addNewScores();
+    const textNode = document.createTextNode(result.message);
+    message.appendChild(textNode);
+    notify.classList.add('error');
+
+    setTimeout(() => {
+      message.innerHTML = '';
+      notify.classList.remove('error');
+    }, 2000);
   }
 });
 
@@ -27,10 +47,10 @@ const scoreList = document.querySelector('.display-scores');
 
 const display = async () => {
   const scores = await leaderboard.getScores();
-  scoreList.innerHTML = scores.result.reduce((output, score) => (
+  scoreList.innerHTML = scores.result.reduce((output, score, i) => (
     `${output
     }
-    <p>${score.user}: ${score.score}</p>
+    <p class ="score-${i % 2 === 0 ? 'odd' : ''} padding">${score.user}: ${score.score}</p>
     `
   ), '');
 };
