@@ -1,30 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
 }
 
 .main-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  margin-top: 5%;
+  gap: 30px;
   width: 100%;
 }
 
 .display-container {
+  width: 25%;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 .display-scores {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
+  border: 2px solid rgb(91, 80, 122);
 }
 
 .heading {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   gap: 20px;
 }
 
@@ -32,6 +46,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 20%;
 }
 
 form {
@@ -43,4 +58,62 @@ form {
 form div {
   display: flex;
   justify-content: flex-end;
+}
+
+button {
+  background-color: rgb(165, 148, 249);
+  color: white;
+  font-weight: 600;
+  padding: 2px 13px;
+  border: 2px solid rgb(165, 148, 249);
+}
+
+button:hover {
+  color: rgb(165, 148, 249);
+  border: 2px solid rgb(165, 148, 249);
+  background-color: rgba(205, 193, 255, 0.3);
+}
+
+input {
+  border: 2px solid rgb(91, 80, 122);
+  padding: 3px 5px;
+}
+
+h1,
+h3 {
+  color: rgb(91, 80, 122);
+}
+
+.score-odd {
+  background-color: rgba(205, 193, 255, 0.3);
+}
+
+.padding {
+  padding: 4px 10px;
+  color: rgb(91, 80, 122);
+}
+
+header {
+  margin-top: 4%;
+  margin-left: 4%;
+}
+
+.notify-user {
+  position: absolute;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  opacity: 0;
+}
+
+.success {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  background-color: rgb(173, 226, 93);
+}
+
+.error {
+  opacity: 1;
+  background-color: rgb(255, 87, 20);
 }
