@@ -8,7 +8,6 @@
   - [:hammer_and_wrench: Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [:rocket: Live Demo](#live-demo)
 - [:computer: Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -21,7 +20,6 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [🙏 walkthrough](#walkthrough)
 - [:memo: License](#license)
 
 # :book: [Leaderboard] <a name="about-project"></a>
@@ -64,10 +62,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-## :rocket: Live Demo <a name="live-demo"></a>
-[commig soon]
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -123,7 +117,6 @@ To run tests, run the following command:
 You can deploy this project using:
 GitHub Pages
 
-[commig soon]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,13 +169,7 @@ I would like to thank Microverse for providing the necessary tools to complete t
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- walkthrough -->
 
-##  Walkthrough <a name="walkthrough"></a>
-
- [comming soon]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
